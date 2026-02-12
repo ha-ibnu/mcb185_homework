@@ -21,3 +21,11 @@ print(math.pow(2, 7))
 print(math.sqrt(8))
 
 print(round(math.log(3.6), ndigits = 2))
+
+print()
+## NUMBERS
+
+print("#numbers")
+print(0.1*1)
+
+print("kida is my husband")
