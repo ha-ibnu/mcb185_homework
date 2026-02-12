@@ -27,5 +27,5 @@ print()
 
 print("#numbers")
 print(0.1*1)
-
-print("kida is my husband")
+print(0.1*5)
+print("kida was my husband")
