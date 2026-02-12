@@ -29,3 +29,30 @@ print("#numbers")
 print(0.1*1)
 print(0.1*5)
 print("kida was my husband")
+
+print("="*50)
+## Variable 
+print('#Variable')
+a =3                        #side of triangle
+b =4                        #side of triangle
+c =math.sqrt(a**2 + b**2)   #hypotenuse
+print(c)
+print(type(a), type(b), type(c))
+print(type(a), type(b), type(c), sep =' ', end=' $$\n')
+print(sep=' ', end='\n')
+print("="*50)
+## Functions 
+print('#Function')
+
+def pytho(a,b):
+    c = math.sqrt(a**2+b**2)
+    return c
+
+hyp = pytho(4, 7)
+hyp1 = pytho(3, 4)
+print(hyp, hyp1, sep=(";"))
+
+#simplified
+def pytho(a,b):
+    return math.sqrt(a**2+b**2)
+print(pytho(5, 8))
