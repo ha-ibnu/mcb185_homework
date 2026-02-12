@@ -56,3 +56,58 @@ print(hyp, hyp1, sep=(";"))
 def pytho(a,b):
     return math.sqrt(a**2+b**2)
 print(pytho(5, 8))
+
+def pytho(a,b): return math.sqrt(a**2+b**2)
+
+""" Tips and tricks,
+knowing your purposes and start write code,
+do not much thinking just write, keep your hand and brain work
+at the same times, after that simplify it."""
+
+print("="*50)
+print()
+print("#Function Practice")
+print()
+print("#Example")
+print("1. Area of circle")
+def crc_a(r): return math.pi * r**2
+print(crc_a(38))
+print()
+print("2. Area of rectangle")
+def rec_a(a,b): return a * b
+print(rec_a(7,4.1))
+print()
+print("3. Area of triangle")
+def tri_a(a,b): return rec_a(a,b)/2
+print(tri_a(2,3))
+print()
+print("#Practice")
+print()
+print("1. Conversion F to C, vice-versa")
+def temp_f(c): return (c*9/5)+32
+def temp_c(f): return (f-32)*5/9
+def temp(val, unit):
+    if unit == "C":
+        return val * 9/5 + 32
+    elif unit == "F":
+        return (val - 32) * 5/9
+    else:
+        return "error"
+
+
+print(temp_f(4), temp_c(100), sep="; ")
+print(temp(4, "C"), temp(100, "F"), sep="; ")
+print()
+print("2. Conversion speed MPH to KPH, vice-versa")
+def speed(val, unit):
+    if unit == "MPH":
+        return val * 1.60934
+    elif unit == "KPH":
+        return val / 1.60934
+    else:
+        return "error"
+print(round(speed(4, "KPH")), round(speed(100, "MPH")), sep="; ")
+
+def distance(x1, y1, x2, y2):
+    return math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(distance(2,3,-1,2))
