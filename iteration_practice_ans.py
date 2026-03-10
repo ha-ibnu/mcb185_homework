@@ -56,6 +56,22 @@ def nilakantha(lim):
 
 print(f'nilakhanta={n} pi={nilakantha(n)}')
 
+import random
+
+pi = 0
+inside = 0
+total = 0
+
+while True:
+	x = random.random()
+	y = random.random()
+	c = x**2 + y**2
+	total += 1
+	if c <= 1:
+		inside += 1
+	pi = 4 * inside/total
+	
+	print(pi)
 
 
 

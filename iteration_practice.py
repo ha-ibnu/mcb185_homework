@@ -49,3 +49,15 @@ def nilakantha(lim):
         if i % 2 == 0: pi = pi - 4 / d # if even , sym - 
         else:          pi = pi + 4 / d # and odd , sym +
     return pi
+    
+def triangular(n):
+	tri = 0 
+	for i in range(n+1):
+		tri = tri + 1
+	return tri
+
+print(triangular(100))
+print(triangular(50))
+print(triangular(0))
+print(triangular(5))
+
