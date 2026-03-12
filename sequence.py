@@ -25,4 +25,17 @@ def translate(dna):
 		else: 				 aas.append('X')
 	return ''.join(aas)
 	
+def translate1(dna):
+	codons = ('ATG', 'TAA', 'TAG', 'TGA')
+	aminos = 'M***'
+	aas = []
+	for i in range(0, len(dna), 3):
+		codon = dna[i: i+3]
+		if codon in codons:
+			idx = codons.index(codon)
+			aa = aminos[idx]
+			aas.append(aa)
+		else:
+			aas.append('X')
+	return ''.join(aas)
 
