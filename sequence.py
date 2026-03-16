@@ -47,4 +47,15 @@ def gc_skew(seq):
 	g = seq.count('G')
 	if c +g == 0: return 0
 	return (g - c) / (g + c)
+	
+aas = 'ACDEFGHIKLMNPQRSTVWY'
+kd  = [1.8,2.5,-3.5,-3.5,2.8,-0.4,-3.2,4.5,-3.9,3.8,
+       1.9,-3.5,-1.6,-3.5,-4.5,-0.8,-0.7,4.2,-0.9,-1.3]
+
+def kd_avg(seq):
+	total = 0
+	for aa in seq:
+		i = aas.index(aa)
+		total += kd[i]
+	return total / len(seq)
 
