@@ -58,4 +58,12 @@ def kd_avg(seq):
 		i = aas.index(aa)
 		total += kd[i]
 	return total / len(seq)
-
+	
+def hydrophob(seq, start, end, w, cutoff):
+	for i in range(start, end -w +1):
+		win = seq[i:i+w]
+		if 'P' in win: continue
+		
+		if kd_avg(win) >= cutoff:
+			return True
+	return False
